@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    
+</body>
+<script>
+    const h = 5
+    for (let i = 0; i <= h; i++) {
+        for (let j = 0; j <= i; j++) {
+            document.getElementById('root').innerHTML +='*'
+        }
+        document.getElementById('root').innerHTML +='<br />'
+    }
+
+    const h2=7
+    for (let i = 1; i <= h2; i++) {
+        for(let sp=h2; sp>i; sp-- ){
+            document.getElementById('root').innerHTML +='&nbsp;&nbsp;'
+        }
+        for (let j = 1; j <= i*2-1; j++) {
+            document.getElementById('root').innerHTML +='*'
+        }
+        document.getElementById('root').innerHTML +='<br />'
+    }
+
+    const h3=8
+    for (let i = 1; i <= h3; i++) {
+        for(let sp=h3; sp>i; sp-- ){
+            document.getElementById('root').innerHTML +='&nbsp;&nbsp;'
+        }
+        for (let j = 1; j <= i*2-1; j++) {
+            if(i==j||j==1||i==h3||j==i*2-1){
+                document.getElementById('root').innerHTML +='*'
+            } else{
+                document.getElementById('root').innerHTML +='&nbsp;&nbsp;'
+            }
+        }
+        document.getElementById('root').innerHTML +='<br />'
+    }
+</script>
+</html>
