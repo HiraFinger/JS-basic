@@ -10,41 +10,42 @@
 
 <body>
     <div id="root"></div>
-    
+
 </body>
 <script>
     const h = 5
     for (let i = 0; i <= h; i++) {
         for (let j = 0; j <= i; j++) {
-            document.getElementById('root').innerHTML +='*'
+            document.getElementById('root').innerHTML += '*'
         }
-        document.getElementById('root').innerHTML +='<br />'
+        document.getElementById('root').innerHTML += '<br />'
     }
 
-    const h2=7
+    const h2 = 7
     for (let i = 1; i <= h2; i++) {
-        for(let sp=h2; sp>i; sp-- ){
-            document.getElementById('root').innerHTML +='&nbsp;&nbsp;'
+        for (let sp = h2; sp > i; sp--) {
+            document.getElementById('root').innerHTML += '&nbsp;&nbsp;'
         }
-        for (let j = 1; j <= i*2-1; j++) {
-            document.getElementById('root').innerHTML +='*'
+        for (let j = 1; j <= i * 2 - 1; j++) {
+            document.getElementById('root').innerHTML += '*'
         }
-        document.getElementById('root').innerHTML +='<br />'
+        document.getElementById('root').innerHTML += '<br />'
     }
 
-    const h3=8
+    const h3 = 8
     for (let i = 1; i <= h3; i++) {
-        for(let sp=h3; sp>i; sp-- ){
-            document.getElementById('root').innerHTML +='&nbsp;&nbsp;'
+        for (let sp = h3; sp > i; sp--) {
+            document.getElementById('root').innerHTML += '&nbsp;&nbsp;'
         }
-        for (let j = 1; j <= i*2-1; j++) {
-            if(i==j||j==1||i==h3||j==i*2-1){
-                document.getElementById('root').innerHTML +='*'
-            } else{
-                document.getElementById('root').innerHTML +='&nbsp;&nbsp;'
+        for (let j = 1; j <= i * 2 - 1; j++) {
+            if (i == j || j == 1 || i == h3 || j == i * 2 - 1) {
+                document.getElementById('root').innerHTML += '*'
+            } else {
+                document.getElementById('root').innerHTML += '&nbsp;&nbsp;'
             }
         }
-        document.getElementById('root').innerHTML +='<br />'
+        document.getElementById('root').innerHTML += '<br />'
     }
 </script>
+
 </html>
